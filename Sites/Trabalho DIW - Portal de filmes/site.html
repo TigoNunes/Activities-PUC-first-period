@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SNN Filmes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    
+    <header class="container-fluid cabeçalho">
+        
+        <div class="row">
+
+            <div class="col-12">
+
+                <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0b0da0fa;">
+                <a class="navbar-brand" href="#">
+                <img src="imagens/SNN5.png" width="70" height="55" alt=""><span class="sr-only">(current)</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Lançamentos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Em destaque</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Avaliações</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Entrevistas & Makingof</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Novidades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://pt.fanpop.com/clubs/nicolas-cage"target="_blank">Nicolas Cage</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+
+            </div>        
+
+        </div>
+
+    </header>
+
+    <main class="main">
+
+      <div class="container lançamentos">
+
+          <div class="row titulo_lançamentos">
+
+            <div class="col-12">
+
+              <h1>Lançamentos</h1>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <!--Carrossel-->
+
+                <div class="col-12">
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row video_carrosel">
+
+                          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <iframe width="100%" height="450" src="https://www.youtube.com/embed/aJMfEz2cobI" allow="accelerometer; autoplay; encrypted-dia; gyroscope; picture-in-picture" frameborder="0" allowfullscreen class="video_trailer" ></iframe>
+                          </div>
+
+                          <div class="col-12 col-sm-12 col-md-12 col-lg-6 texto">
+                            <h2>Godzilla vs. Kong</h2>
+                            <p><strong>Sinopse:</strong> As lendas se enfrentam em "Godzilla vs. Kong", quando esses adversários míticos se encontram em uma espetacular batalha, na qual o destino do mundo entrará em jogo. Kong e seus protetores embarcam em uma jornada perigosa para encontrar seu verdadeiro lar. Com eles está Jia, uma jovem órfã que tem uma ligação única e forte com Kong. Mas eles não sabiam que estavam no caminho de um Godzilla enfurecido, que está deixando um rastro de destruição pelo planeta. Esse combate épico entre os dois titãs, instigado por forças ocultas, é apenas o começo do mistério que jaz no núcleo da Terra.</p>
+                            <p><strong>Diretor:</strong> Adam Wingard</p>
+                            <p><strong>Elenco:</strong> <br> Kyle Chander | Millie Bobby Brown | Alexander Skarsgard | Rebecca Hall | Brian Tyree Henry | Shun Oguri | Eiza Gonzalez | Julian Dennison</p>
+                            <p><strong>Avaliação:</strong><br><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fas fa-star-half-alt"></i> <i class="far fa-star"></i></p>
+                          </div>
+
+                        </div>
+
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row video_carrosel">
+
+                          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <iframe width="100%" height="450" src="https://www.youtube.com/embed/1q05D1GO4eo" allow="accelerometer; autoplay; encrypted-dia; gyroscope; picture-in-picture" frameborder="0" allowfullscreen class="video_trailer" ></iframe>
+                          </div>
+
+                          <div class="col-12 col-sm-12 col-md-12 col-lg-6 texto">
+                            <h2>Chorão: Marginal Alado</h2>
+                            <p><strong>Sinopse:</strong> O documentário retrata a vida e a carreira do cantor brasileiro Chorão, líder da banda Charlie Brown Jr. Além de depoimentos sobre sua vida pessoal e profissional e imagens de arquivo, o filme acompanha a história de uma das estrelas do rock mais importantes do Brasil. Chorão viveu duas décadas intensas de sucesso nacional e internacional, cheios de momentos polêmicos, até sua morte prematura, por overdose de drogas, em 2013.</p>
+                            <p><strong>Diretor:</strong> Felipe Novaes</p>
+                            <p><strong>Elenco:</strong> <br> Chorão | Zeca Baleiro | Paulo Vihena | Rick Bonadio</p>
+                            <p><strong>Avaliação:</strong><br><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fas fa-star-half-alt"></i> <i class="far fa-star"></i></p>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="row video_carrosel">
+
+                          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <iframe width="100%" height="450" src="https://www.youtube.com/embed/yJW4szoZX1U" allow="accelerometer; autoplay; encrypted-dia; gyroscope; picture-in-picture" frameborder="0" allowfullscreen class="video_trailer" ></iframe>
+                          </div>
+
+                          <div class="col-12 col-sm-12 col-md-12 col-lg-6 texto">
+                            <h2>Meu Pai</h2>
+                            <p><strong>Sinopse:</strong> Anthony tem 81 anos de idade. Ele mora sozinho em seu apartamento em Londres, e recusa todos os cuidadores que sua filha, Anne, tenta impor a ele. Mas isso se torna uma necessidade maior quando ela resolve se mudar para Paris com um homem que conheceu há pouco, e não poderá estar com pai todo dia. Fatos estanhos começam a acontecer: um desconhecido diz que este é o seu apartamento. Anne se contradiz, e nada mais faz sentido na cabeça de Anthony. Estaria ele enlouquecendo, ou seria um plano de sua filha para o tirar de casa?</p>
+                            <p><strong>Diretor:</strong> Florian Zeller</p>
+                            <p><strong>Elenco:</strong> <br> Anthony Hopkins | Olivia Colman | Rufus Sewell | Imogen Poots | Mark Gatiss | Olivia Williams | Ayesha Dharker</p>
+                            <p><strong>Avaliação:</strong><br><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="far fa-star"></i></p>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="row video_carrosel">
+
+                          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <iframe width="100%" height="450" src="https://www.youtube.com/embed/8EWxHjHPvQM" allow="accelerometer; autoplay; encrypted-dia; gyroscope; picture-in-picture" frameborder="0" allowfullscreen class="video_trailer" ></iframe>
+                          </div>
+
+                          <div class="col-12 col-sm-12 col-md-12 col-lg-6 texto">
+                            <h2>Raya e o Último Dragão</h2>
+                            <p><strong>Sinopse:</strong> Há muito tempo, no mundo de fantasia de Kumandra, humanos e dragões viviam juntos em harmonia. Mas quando uma força maligna ameaçou a terra, os dragões se sacrificaram para salvar a humanidade. Agora, 500 anos depois, o mesmo mal voltou e cabe a uma guerreira solitária, Raya, rastrear o lendário último dragão para restaurar a terra despedaçada e seu povo dividido.</p>
+                            <p><strong>Diretores:</strong> Carlos López Estrada | Don Hall</p>
+                            <p><strong>Elenco:</strong> <br> Kelly Marie Tran | Awkwafina | Gemma Chan | Daniel Dae Kim | Sandra Oh | Benedict Wong | Ross Butler | Lucille Soong</p>
+                            <p><strong>Avaliação:</strong><br><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+          </div>
+
+      </div>
+
+      <div class="container Em_destaque">
+
+        <div class="row header_destaque">
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 titulo_destaque">
+
+            <h1>Em destaque</h1>
+
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+
+            <div class="dropdown">
+              <button class="btn btn-lg dropdown-toggle" style="background-color: #0b0da0fa; color: white;" type="button" id="dropdownMenuButton" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                Categoria: Todos
+              </button>
+              <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Aventura</a>
+                <a class="dropdown-item" href="#">Romance</a>
+                <a class="dropdown-item" href="#">Comedia</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row imagens_destaque">
+
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+
+            <img src="https://http2.mlstatic.com/D_NQ_NP_971681-MLB44466526657_012021-O.jpg">
+
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+
+            <img src="https://filmebaixar.com/image/cache/catalog/poster/96307-337x500.jpg">
+
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 imagens_destaque3">
+
+            <img src="https://ultimatodobacon.com/wp-content/uploads/2020/05/Liga-da-Justica-Sombria-Guerra-de-Apokolips-Poster-683x1024.jpg">
+
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 imagens_destaque4">
+
+            <img src="https://m.media-amazon.com/images/M/MV5BOTRiNzFhNjAtNTdhMS00ZjViLWFhNTUtMWJlMTJkMGM1YzM4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg">
+
+          </div>
+
+
+        </div>
+
+        <div class="row carregar_mais">
+          
+          <div class="col-12">
+
+            <button type="button" class="btn btn-primary" style="background-color: #0b0da0fa; color: white;" data-display="static">+ Carregar mais filmes</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="container avaliações">
+
+        <div class="row header_avaliações">
+
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+            <h1>Úlatimas avaliações</h1>
+
+          </div>
+
+        </div>
+ 
+        <div class="row textos_avaliações">
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4 avaliação_usuario">
+
+            <div class="row">
+
+              <div class="col-2">
+
+                <i class="fas fa-smile fa-3x" style="color: green;"></i>
+
+              </div>
+
+              <div class="col-10">
+
+                <h2>Mutantgamer975</h2>
+                <p><strong>Filme:</strong> Jiu Jitsu</p>
+                <p><strong>Avaliação:</strong> O filme é simplismente incrivel, uma excelente mistura de Alien com Mortal Kombate. Além de uma história incrivel o filme ainda tem participação do meu ator favorito Nicolas Cage.</p>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <time datetime="2021-21-04" class="esapaço">21/04/2021</time>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4 avaliação_usuario2">
+
+            <div class="row">
+
+              <div class="col-2">
+
+                <i class="fas fa-meh fa-3x" style="color: yellow;"></i>
+
+              </div>
+
+              <div class="col-10">
+
+                <h2>Dio</h2>
+                <p><strong>Filme:</strong> Zack Snyder's Justice League</p>
+                <p><strong>Avaliação:</strong> O filme não me surpreendeu. Eu esperava um filme melhor, e recebi, só que mesmo assim o filme continua fraco.</p>
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-alt"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <time datetime="2021-21-04" class="esapaço">21/04/2021</time>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 avaliação_usuario3">
+
+            <div class="row">
+
+              <div class="col-2">
+
+                <i class="fas fa-angry fa-3x" style="color: red;"></i>
+
+              </div>
+
+              <div class="col-10">
+
+                <h2>Miguel</h2>
+                <p><strong>Filme:</strong> Cats</p>
+                <p><strong>Avaliação:</strong> Essa coina nem pode ser chamada de filme, nunca vi tamanha m****. O roteiro é fraco, os atores não entregam emoção e os gatos em forma de humanos são a coisa mais bizarra que eu já vi. NÃO GASTEM SEU TEMPO VENDO ISSO!</p>
+                <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <time datetime="2021-21-04" class="esapaço">21/04/2021</time>
+
+              </div>
+
+            </div>        
+
+
+          </div>
+
+
+        </div>
+
+        <div class="row carregar_mais2">
+          
+          <div class="col-12">
+
+            <button type="button" class="btn btn-primary" style="background-color: #0b0da0fa; color: white;" data-display="static">+ Carregar mais avaliações</button>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+      <div class="container Entrevistas">
+
+        <div class="row header_entrenvistas">
+
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+
+            <h1>Entrevistas & Makingof</h1>
+
+          </div>
+
+        </div>
+
+        <div class="row texto_entrevistas">
+          
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+
+            <iframe width="100%" height="250" src="https://www.youtube.com/embed/KZ_fIcciJws" allow="accelerometer; autoplay; encrypted-dia; gyroscope; picture-in-picture" frameborder="0" allowfullscreen class="video_trailer" ></iframe>
+            <h5><strong>Filme:</strong> Homem-Aranha - Longe de Casa</h5>
+            <p><strong>Diretor:</strong> Jon Watts</p>
+            <p><strong>Roteiro:</strong> Erik Sommers | Chris McKenna</p> 
+            <p><strong>Estreia:</strong> 2019</p>
+
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4 entrevista2">
+
+            <iframe width="100%" height="250" src="https://www.youtube.com/embed/RJ_-4ECW8t8" allow="accelerometer; autoplay; encrypted-dia; gyroscope; picture-in-picture" frameborder="0" allowfullscreen class="video_trailer" ></iframe>
+            <h5><strong>Filme:</strong> Um Príncipe em Nova York 2</h5>
+            <p><strong>Diretor:</strong> Craig Brewer</p>
+            <p><strong>Roteiro:</strong> Barry W. Blaustein | Kenya Barris | David Sheffield</p> 
+            <p><strong>Estreia:</strong> 2021</p>
+
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4 entrevista3">
+
+            <iframe width="100%" height="250" src="https://www.youtube.com/embed/nHB-SdIAFeI" allow="accelerometer; autoplay; encrypted-dia; gyroscope; picture-in-picture" frameborder="0" allowfullscreen class="video_trailer" ></iframe>
+            <h5><strong>Filme:</strong> Velozes e Furiosos 9</h5>
+            <p><strong>Diretor:</strong> Justin Lin</p>
+            <p><strong>Roteiro:</strong> Justin Lin | Chris Morgan | Gary Scott Thompson | Daniel Casey</p> 
+            <p><strong>Estreia:</strong> 2021</p>            
+
+          </div>
+
+        </div>
+
+        <div class="row carregar_mais">
+          
+          <div class="col-12">
+
+            <button type="button" class="btn btn-primary" style="background-color: #0b0da0fa; color: white;" data-display="static">+ Carregar mais filmes</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="container Novidades Sobre Editorial">
+
+        <div class="row">
+
+          <div class=" col-12 col-sm-12 col-md-12 col-lg-8">
+
+            <div class="row header_novidades">
+
+              <div class="col-12">
+
+                <h1>Novidades</h1>
+
+              </div>
+
+            </div>
+
+            <div class="row conteudo_novidades">
+
+              <div class="col-12">
+
+                <div class="row texto_novidade">
+
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+
+                    <img src="https://t2.tudocdn.net/556777?w=646&h=284">
+
+                  </div>
+
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-8 textos_novidades">
+
+                    <h2>Novidades da Netflix</h2>
+                    <p>A Netflix pegou grande parte do público de surpresa no final da manhã desta terça-feira (12) ao anunciar a lista com todos os filmes que serão disponibilizados na plataforma ao longo de 2021</p>
+                    <button type="button" class="btn btn-secondary btn-sm" style="border-radius: 25px; margin-right: 10px; background-color: #0b0da0fa; color: white;">Netflix</button> <button type="button" class="btn btn-secondary btn-sm "style="border-radius: 25px; margin-right: 10px; background-color: #0b0da0fa; color: white;">plataforma de streaming</button> <button type="button" class="btn btn-secondary btn-sm" style="border-radius: 25px; background-color: #0b0da0fa; color: white;">surpreendente</button>
+
+                  </div>
+
+                </div>
+
+                <div class="row texto_novidade2">
+
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+
+                    <img src="https://storage.googleapis.com/marriedgames.com.br/3d8a8a0f-imagem_2021-04-20_154841.png" >
+
+                  </div>
+
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-8 textos_novidades2">
+
+                    <h2>Veja O Novo Trailer De Mortal Kombat</h2>
+                    <p>O filme de Mortal Kombat está perto de chegar aos cinemas e promete ser uma adaptação muito mais fiel aos games, com sangue e fatalitys de verdade.</p>
+                    <button type="button" class="btn btn-secondary btn-sm" style="border-radius: 25px; margin-right: 10px; background-color: #0b0da0fa; color: white;">Hollywood</button> <button type="button" class="btn btn-secondary btn-sm "style="border-radius: 25px; margin-right: 10px; background-color: #0b0da0fa; color: white;">Cinema</button> <button type="button" class="btn btn-secondary btn-sm" style="border-radius: 25px; background-color: #0b0da0fa; color: white;">Video games</button>
+
+                  </div>
+
+                </div>
+
+                <div class="row texto_novidade3">
+
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+
+                    <img src="https://ufilmes.com.br/ufimg/img/images-capa/missao-impossivel-7-lancamento-800-600.webp" alt="">
+
+                  </div>
+
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-8 textos_novidades3">
+
+                    <h2>PARAMOUNT PICTURES: Divulgando novas datas de lançamentos no Brasil</h2>
+                    <p>A Paramount Pictures divulgou o calendário de lançamentos dos seus próximos filmes que serão lançados até 2023.</p>
+                    <button type="button" class="btn btn-secondary btn-sm" style="border-radius: 25px; margin-right: 10px; background-color: #0b0da0fa; color: white;">Hollywood</button> <button type="button" class="btn btn-secondary btn-sm "style="border-radius: 25px; margin-right: 10px; background-color: #0b0da0fa; color: white;">Paramount</button> <button type="button" class="btn btn-secondary btn-sm" style="border-radius: 25px; background-color: #0b0da0fa; color: white;">Melhores filmes</button>
+                  
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+
+            <div class="row header_sobre"> 
+
+              <div class="col-12">
+
+                <h1>Sobre</h1>
+
+              </div>
+
+            </div>
+
+            <div class="row texto_sobre">
+
+              <div class="col-12">
+
+                <p>Este site é de um trabalho da PUC Minas da Praça da Liberdade. Nele você encontra um layout responsivo de um Portal de filmes.</p>
+
+              </div>
+
+            </div>
+
+            <div class="row header_editorial">
+
+              <div class="col-12">
+
+                <h1>Editorial</h1>
+
+              </div>
+
+              <div class="row texto_editorial">
+
+                <div class="col-12">
+  
+                  <div class="row nomes_editorial">
+
+                    <div class="col-1">
+
+                      <i class="fas fa-user fa"></i> 
+
+                    </div>
+
+                    <div class="col-10">
+
+                      <p><strong>Redação:</strong> Tiago Nunes</p><br>
+
+                    </div>
+
+                  </div>
+
+                  <div class="row nomes_editorial">
+
+                    <div class="col-1">
+
+                      <i class="fas fa-user fa"></i> 
+
+                    </div>
+
+                    <div class="col-10">
+
+                      <p><strong>Pesquisa:</strong> Tiago Nunes</p><br>
+
+                    </div>
+
+                  </div>
+
+                  <div class="row nomes_editorial">
+
+                    <div class="col-1">
+
+                      <i class="fas fa-user fa"></i> 
+
+                    </div>
+
+                    <div class="col-10">
+
+                      <p><strong>Gerenre geral:</strong> Tiago Nunes</p><br>
+
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+
+                    <div class="col-12">
+
+                      <h4>Redes sociaia:</h4>
+                      <i class="fab fa-instagram fa-2x redes_sociais"></i> <i class="fab fa-twitter-square fa-2x redes_sociais"></i> <i class="fab fa-facebook-square fa-2x"></i> 
+                    
+                    </div>
+
+                  </div>
+  
+                </div>
+  
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>   
+
+    </main>
+
+    <footer>
+      <div class="container footer">
+
+        <div class="row"> 
+
+          <div class="col-12 header_footer">
+
+            <p>Copyright 2021 - Disciplina de Desenvolvimento de Interface Web - <strong>ICEI PUC MINAS</strong></p>  <img src="imagens/SNN5.png" width="70" height="55" alt=""><span class="sr-only">(current)</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
