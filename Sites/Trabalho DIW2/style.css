@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(28, 48, 48);
+}
+
+.card{
+    max-width: 100%;
+    background-color: rgb(28, 48, 48);
+    color: white;
+}
+
+.AAA{
+    color: white !important;
+    background-color: rgb(28, 48, 48);
+}
+.AAA:hover{
+    background-color: blue !important;
+}
+
+@media screen and (max-width: 600px) {
+    .card{
+        max-width: 50%;
+    }
+}
+
